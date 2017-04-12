@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
 		<style type="text/css">
 			/*modify appearance of <body>*/
 			body{
-				background-color:#eeeeee;
-				color:#fff;
+				background-color:#7d9ec0;
+				color:#000;
 				font-family:arial;
 				font-size:20px;
-				background-image:url(https://s-media-cache-ak0.pinimg.com/736x/78/b1/96/78b1965dbb8d754bbeb6f9a1addf0d4f.jpg);
 			}
 			/*modify appearance of h1*/
 			h1{
-				font-family:arial;
+				font-family:Fjalla One;
 				border:2px solid black;
 				width:250px;
 				background-color:#eeeeee;
@@ -20,14 +20,57 @@
 				margin:0px;
 			}
 
+			.box{
+				position:fixed;
+				background:#fff;
+				box-shadow:7px 7px 0px #fff,7px -7px 0px #fff, -7px -7px 0px #fff, -7px 7px 0px #fff;
+				padding:10px;
+				margin-top:50px;
+				margin-left:50px;
+				font-size:50px;
+				font-family:GT Walsheim Pro Trial Medium;
+				transition:all 0.5s ease;
+				-webkit-transition:all 0.5s ease;
+			}
+
+			.box:hover{
+				background-color:#000;
+
+			}
+
+			.box2{
+				position:fixed;
+				background:#fff;
+				box-shadow:7px 7px 0px #fff,7px -7px 0px #fff, -7px -7px 0px #fff, -7px 7px 0px #fff;
+				padding:10px;
+				margin-top:180px;
+				margin-left:150px;
+				font-size:50px;
+				font-family:GT Walsheim Pro Trial Medium;
+			}
+
+			.cool{
+				border-radius:1000px;
+				width:100px;
+				height:100px;
+				border:1px solid #000;
+			}
+
+			.cool:active{
+				border:1px solid #fff;
+			}
+
 		</style>
 		<title>My website</title>
 	</head>
 	<body>
 		<!--h1 = heading, p = paragraph, a = link, img = image-->
-		<h1><font color="#4463b6">Hello</font></h1>
-		<p>good <a href="http://google.com">morning</a> asldkjawlrisdkfjalskfjaslkhfashf</p>
+		<!--<h1><font color="#4463b6">Hello</font></h1>
+		<p>good <a href="http://google.com">morning</a>asldkjawlrisdkfjalskfjaslkhfashf</p>
 		<img src="https://static.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg" width=500px>
-		<p><b>abcdef</b><i>ghijk</i><u>lmnop</u></p>
+		<p><b>abcdef</b><i>ghijk</i><br><u>lmnop</u></p>-->
+		<div class="box">tech for girls</div>
+		<div class="box2">we are cool
+		<button class="cool">this is a button</button></div>
 	</body>
 </html>
