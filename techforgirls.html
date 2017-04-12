@@ -5,10 +5,11 @@
 		<style type="text/css">
 			/*modify appearance of <body>*/
 			body{
-				background-color:#7d9ec0;
+				
 				color:#000;
 				font-family:arial;
 				font-size:20px;
+				background:-webkit-linear-gradient(right, purple, blue, green, yellow, orange, red);
 			}
 			/*modify appearance of h1*/
 			h1{
@@ -21,25 +22,28 @@
 			}
 
 			.box{
-				position:fixed;
+				position:absolute;
 				background:#fff;
 				box-shadow:7px 7px 0px #fff,7px -7px 0px #fff, -7px -7px 0px #fff, -7px 7px 0px #fff;
-				padding:10px;
+				padding-top:10px;
+				padding-bottom:10px;
 				margin-top:50px;
-				margin-left:50px;
+				margin-left:0px;
 				font-size:50px;
+				width:100%;
 				font-family:GT Walsheim Pro Trial Medium;
 				transition:all 0.5s ease;
 				-webkit-transition:all 0.5s ease;
 			}
 
 			.box:hover{
+				color:#ffffff;
 				background-color:#000;
 
 			}
 
 			.box2{
-				position:fixed;
+				position:absolute;
 				background:#fff;
 				box-shadow:7px 7px 0px #fff,7px -7px 0px #fff, -7px -7px 0px #fff, -7px 7px 0px #fff;
 				padding:10px;
@@ -47,6 +51,7 @@
 				margin-left:150px;
 				font-size:50px;
 				font-family:GT Walsheim Pro Trial Medium;
+				z-index:1001;
 			}
 
 			.cool{
@@ -60,6 +65,44 @@
 				border:1px solid #fff;
 			}
 
+			.profilebox{
+				border:1px solid #000000;
+				font-family:GT Walsheim Pro Trial Medium;
+				position:absolute;
+				margin-left:50px;
+				margin-top:350px;
+				background:#ffffff;
+				padding:10px;
+				transition:all 0.5s ease;
+				-webkit-transition:all 0.5s ease;
+				border-radius: 10px;
+			}
+
+			.profilebox:hover{
+				color:#ffffff;
+				background-color:#000000;
+			}
+
+			.descriptionbox{
+				position:absolute;
+				margin-left:50px;
+				margin-top:520px;
+				font-family:GT Walsheim Pro Trial Medium;
+				background:#ffffff;
+				padding:10px;
+				border:1px solid #000000;
+			}
+
+			.triangle{
+				position:absolute;
+				width:0px;
+				height:0px;
+				border:100px solid transparent;
+				border-bottom:100px solid #000000;
+				z-index:1000;
+				background:-webkit-linear-gradient(right, purple, blue, green, yellow, orange, red);
+			}
+
 		</style>
 		<title>My website</title>
 	</head>
@@ -71,6 +114,10 @@
 		<p><b>abcdef</b><i>ghijk</i><br><u>lmnop</u></p>-->
 		<div class="box">tech for girls</div>
 		<div class="box2">we are cool
-		<button class="cool">this is a button</button></div>
+		<button class="cool">this is a button</button>
+		</div>
+		<div class="profilebox">Julia Guo<br><img src="http://emblemsbattlefield.com/uploads/posts/2014/10/facebook-default-photo-male_1.jpg" width=100px></div>
+		<div class="descriptionbox">Description can go here blah blah blah blah<br><iframe width="400" height="200" src="https://www.youtube.com/embed/JKEJqCCxJTs" frameborder="0" allowfullscreen></iframe></div>
+		<div class="triangle"></div>
 	</body>
 </html>
