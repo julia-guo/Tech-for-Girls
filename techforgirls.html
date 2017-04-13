@@ -5,11 +5,11 @@
 		<style type="text/css">
 			/*modify appearance of <body>*/
 			body{
-				
+				margin:0 auto;
 				color:#000;
 				font-family:arial;
 				font-size:20px;
-				background:-webkit-linear-gradient(right, purple, blue, green, yellow, orange, red);
+				background:#6586a5;
 			}
 			/*modify appearance of h1*/
 			h1{
@@ -45,13 +45,35 @@
 			.box2{
 				position:absolute;
 				background:#fff;
-				box-shadow:7px 7px 0px #fff,7px -7px 0px #fff, -7px -7px 0px #fff, -7px 7px 0px #fff;
 				padding:10px;
+				height:50px;
+				width:300px;
 				margin-top:180px;
 				margin-left:150px;
 				font-size:50px;
 				font-family:GT Walsheim Pro Trial Medium;
 				z-index:1001;
+				transition:all 0.5s ease;
+				-webkit-transition:all 0.5s ease;
+			}
+
+			.child{
+				background-color:transparent;
+				width:0px;
+				margin-left:-10px;
+				margin-top:-1px;
+				padding:10px;
+				height:50px;
+				opacity:0;
+				transition:all 0.5s ease;
+				-webkit-transition:all 0.5s ease;
+			}
+
+			.box2:hover .child{
+				opacity:1;
+				height:50px;
+				width:300px;
+				background-color:white;
 			}
 
 			.cool{
@@ -92,7 +114,7 @@
 				padding:10px;
 				border:1px solid #000000;
 			}
-
+/*
 			.triangle{
 				position:absolute;
 				width:0px;
@@ -100,7 +122,31 @@
 				border:100px solid transparent;
 				border-bottom:100px solid #000000;
 				z-index:1000;
-				background:-webkit-linear-gradient(right, purple, blue, green, yellow, orange, red);
+			}
+*/
+			.navbar{
+				position:fixed;
+				top:0px;
+				left:0px;
+				width:100%;
+				height:50px;
+				background:#aaaaaa;
+			}
+
+			.navbar a{
+				font-family:GT Walsheim Pro Trial Medium;
+				background:#ffffff;
+				border:1px solid #555555;
+				border-radius:5px;
+				display:inline-block;
+				margin:5px;
+				text-decoration:none;
+				color:purple;
+				padding:5px;
+			}
+
+			.navbar a:hover{
+
 			}
 
 		</style>
@@ -113,11 +159,13 @@
 		<img src="https://static.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg" width=500px>
 		<p><b>abcdef</b><i>ghijk</i><br><u>lmnop</u></p>-->
 		<div class="box">tech for girls</div>
-		<div class="box2">we are cool
-		<button class="cool">this is a button</button>
+		<div class="box2">we are cool<div class="child">test</div>
 		</div>
 		<div class="profilebox">Julia Guo<br><img src="http://emblemsbattlefield.com/uploads/posts/2014/10/facebook-default-photo-male_1.jpg" width=100px></div>
 		<div class="descriptionbox">Description can go here blah blah blah blah<br><iframe width="400" height="200" src="https://www.youtube.com/embed/JKEJqCCxJTs" frameborder="0" allowfullscreen></iframe></div>
-		<div class="triangle"></div>
+		<div class="navbar">
+		<a href="http://google.com">Google</a>
+		<a href="/askme">Ask Me Anything</a>
+		</div>
 	</body>
 </html>
