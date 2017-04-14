@@ -2,6 +2,14 @@
 <html>
 	<head>
 		<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+
+		<script>
+
+			alert("Welcome to my website");
+			alert("This is an alert");
+
+		</script>
+
 		<style type="text/css">
 			/*modify appearance of <body>*/
 			body{
@@ -24,7 +32,6 @@
 			.box{
 				position:absolute;
 				background:#fff;
-				box-shadow:7px 7px 0px #fff,7px -7px 0px #fff, -7px -7px 0px #fff, -7px 7px 0px #fff;
 				padding-top:10px;
 				padding-bottom:10px;
 				margin-top:50px;
@@ -124,7 +131,7 @@
 				z-index:1000;
 			}
 */
-			.navbar{
+			#navbar{
 				position:fixed;
 				top:0px;
 				left:0px;
@@ -133,7 +140,7 @@
 				background:#aaaaaa;
 			}
 
-			.navbar a{
+			#navbar a{
 				font-family:GT Walsheim Pro Trial Medium;
 				background:#ffffff;
 				border:1px solid #555555;
@@ -143,10 +150,13 @@
 				text-decoration:none;
 				color:purple;
 				padding:5px;
+				transition:all 0.5s ease;
+				-webkit-transition:all 0.5s ease;
 			}
 
-			.navbar a:hover{
-
+			#navbar a:hover{
+				color:#ffffff;
+				background:purple;
 			}
 
 		</style>
@@ -163,9 +173,14 @@
 		</div>
 		<div class="profilebox">Julia Guo<br><img src="http://emblemsbattlefield.com/uploads/posts/2014/10/facebook-default-photo-male_1.jpg" width=100px></div>
 		<div class="descriptionbox">Description can go here blah blah blah blah<br><iframe width="400" height="200" src="https://www.youtube.com/embed/JKEJqCCxJTs" frameborder="0" allowfullscreen></iframe></div>
-		<div class="navbar">
-		<a href="http://google.com">Google</a>
-		<a href="/askme">Ask Me Anything</a>
+		<div id="navbar">
+		
+			<div onclick="getElementById('navbar').innerHTML='<button>cool</button>'">sdsd</div>
 		</div>
+
+		
 	</body>
 </html>
+<!--
+<a href="http://google.com">Google</a>
+		<a href="/askme">Ask Me Anything</a>
